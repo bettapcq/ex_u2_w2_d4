@@ -1,0 +1,86 @@
+@import './scss/functions';
+@import './scss/variables';
+@import './scss/mixins';
+@import './scss/buttons';
+@import './scss/card';
+
+// INSERIRE QUI LE MODIFICHE
+
+$h7-font-size: $font-size-base * 0.75;
+$h8-font-size: $font-size-base * 0.5;
+$h9-font-size: $font-size-base * 0.25;
+$h10-font-size: $font-size-base * 0.1;
+
+$new-font-sizes: (
+  7: $h7-font-size,
+  8: $h8-font-size,
+  9: $h9-font-size,
+  10: $h10-font-size,
+);
+
+$font-sizes: map-merge($font-sizes, $new-font-sizes);
+
+$new-border-widths: (
+  6: 6px,
+  7: 7px,
+  8: 8px,
+  9: 9px,
+  10: 10px,
+);
+
+$border-widths: map-merge($border-widths, $new-border-widths);
+
+$new-input-btn-padding-y: 0.75rem;
+$new-input-btn-padding-x: 2.5rem;
+
+$input-btn-padding-y: merge($input-btn-padding-y, $new-input-btn-padding-y);
+$input-btn-padding-x: merge($input-btn-padding-x, $new-input-btn-padding-x);
+
+$new-grid-gutter-width: 0.5rem;
+
+$grid-gutter-width: merge($grid-gutter-width, $new-grid-gutter-width);
+
+$new-info: #00ffea;
+$new-danger: #ff0077;
+$new-light: #f3eeff;
+$epicode-1: #5726c3;
+$epicode-2: #8625a5;
+$epicode-3: #cb2376;
+
+$new-theme-colors: (
+  'info': $new-info,
+  'danger': $new-danger,
+  'light': $new-light,
+  'epicode-1': $epicode-1,
+  'epicode-2': $epicode-2,
+  'epicode-3': $epicode-3,
+);
+
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+
+//card da vedere!!!
+$new-card-bg: $dark;
+$new-card-color: $info;
+
+$card-bg: merge($card-bg, $new-card-bg);
+$card-color: merge($card-color, $new-card-color);
+
+$new-badge-border-radius: 50rem;
+
+$badge-border-radius: merge($badge-border-radius, $new-badge-border-radius);
+
+$new-grid-breakpoints: (
+  3xl: 1600px,
+  4xl: 1800px,
+);
+
+$new-container-max-widths: (
+  3xl: 1520px,
+  4xl: 1720px,
+);
+
+$grid-breakpoints: map-merge($grid-breakpoints, $new-grid-breakpoints);
+$container-max-widths: map-merge($container-max-widths,$new-container-max-widths);
+
+// IMPORT FINALE
+@import './scss/bootstrap.scss';
