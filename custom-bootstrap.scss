@@ -30,15 +30,15 @@ $new-border-widths: (
 
 $border-widths: map-merge($border-widths, $new-border-widths);
 
-$new-input-btn-padding-y: 0.75rem;
-$new-input-btn-padding-x: 2.5rem;
+$btn-padding-y: 0.75rem;
+$btn-padding-x: 2.5rem;
 
-$input-btn-padding-y: merge($input-btn-padding-y, $new-input-btn-padding-y);
-$input-btn-padding-x: merge($input-btn-padding-x, $new-input-btn-padding-x);
+// $input-btn-padding-y: merge($input-btn-padding-y, $new-input-btn-padding-y);
+// $input-btn-padding-x: merge($input-btn-padding-x, $new-input-btn-padding-x);
 
-$new-grid-gutter-width: 0.5rem;
+$grid-gutter-width: 0.5rem;
 
-$grid-gutter-width: merge($grid-gutter-width, $new-grid-gutter-width);
+// $grid-gutter-width: merge($grid-gutter-width, $new-grid-gutter-width);
 
 $new-info: #00ffea;
 $new-danger: #ff0077;
