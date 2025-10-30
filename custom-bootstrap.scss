@@ -65,9 +65,16 @@ $card-color: $info;
 // $card-bg: merge($card-bg, $new-card-bg);
 // $card-color: merge($card-color, $new-card-color);
 
+//metodo un po forzato:
 $badge-border-radius: 75rem;
 $input-border-radius: 75rem;
 $btn-border-radius: 75rem;
+
+//metodo più smart:
+// $badge-border-radius: var(--#{$prefix}border-radius-pill); 
+// $input-border-radius: var(--#{$prefix}border-radius-pill); 
+// $btn-border-radius: var(--#{$prefix}border-radius-pill); 
+
 
 // $badge-border-radius: merge($badge-border-radius, $new-badge-border-radius);
 
